@@ -93,11 +93,10 @@ a:hover::after {
   transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
   transform-origin: left;
   transition-delay: 0.65s;
-  /* opacity: 0;
-  transform: scaleX(0); */
+ 
 }
 .wrapper {
-  perspective: 406px;
+  perspective: 250px;
 }
 .appear{
   opacity:0;
@@ -107,12 +106,14 @@ a:hover::after {
   transition: 0.8s cubic-bezier(0.215,0.61,0.355,1);
 
 } .appear.is-inview {
-  transition-delay: 1s;
+  transition-delay: 0.2s;
   opacity: 1;
   transform: none;
 }
 
 /* Paramètres par ordre d'apparition CSS */
+
+
 header {
   min-height: 100vh;
   position: relative;
@@ -122,9 +123,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
-/* #h1-wrapper {
-  transition-delay: 0.3s;
-} */
+
 h1 {
   font-size: calc(2rem + 8vw);
   margin-top: 70px;
@@ -137,12 +136,21 @@ header h2 {
   margin: 18px 0;
   text-align: left;
 }
-/* #h2-1 {
-  transition-delay: 0.9s;
+
+footer{
+  height: 100vh;
+  width: 100vw;
 }
-#h2-2 {
-  transition-delay: 1.2s;
-} */
+.fa-linkedin:hover{
+  transform: scale(1.04);
+  color: #0a66c2;
+
+}
+.fa-linkedin{
+  color:rgb(248, 242, 242);
+  font-size: 2.3rem;
+}
+
 .scroll-wrapper {
   position: absolute;
   left: 50%;
@@ -179,7 +187,10 @@ header h2 {
   line-height: calc(7px + 4.5vw);
   font-size: calc(1rem + 1vw);
   letter-spacing: 1px;
+  border: #fffb00 solid;
+  color: #000000;
 }
+
 .skills {
   margin: 200px 0 250px;
 }
@@ -201,6 +212,7 @@ header h2 {
   color: #fefeff;
   display: inline-block;
   padding: 0 12px 12px 12px;
+  
 }
 .portfolio {
   margin: 200px 0;
@@ -214,19 +226,7 @@ header h2 {
   max-width: 600px;
   margin: 50px 5vw;
 }
-/* .project::before {
-  content: "";
-  position: absolute;
-  height: 110%;
-  width: 100%;
-  top: -3px;
-  background: #fefeff;
-  transition: width 1s ease-out;
-  transition-delay: 0.85s;
-}
-.project.is-inview::before {
-  width: 0;
-} */
+
 #p2 {
   margin: 0 6vw 0 auto;
 }
@@ -259,6 +259,7 @@ header h2 {
   font-size: 2rem;
   margin-top: 1.5vw;
   color: #fefeff;
+
 }
 footer {
   margin: 150px 0 120px;
@@ -268,12 +269,7 @@ footer p {
   text-align: center;
   margin: 25px 0;
 }
-/* #l2 {
-  transition-delay: 1.2s;
-}
-#l3 {
-  transition-delay: 1.6s;
-} */
+
 footer a {
   font-family: "font-bold", serif;
   color: #000101;
