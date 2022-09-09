@@ -8,9 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Dylan Stockinger</title>
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    
     <link rel="stylesheet" href="./assets/lib/locomotive-scroll.min.css" />
     <link rel="stylesheet" href="./assets/styles/style.css" />
+
+
+
   </head>
   <body>
     <div data-scroll-container>
@@ -64,40 +68,98 @@
           <div class="img img1"></div>
         </div>
         <div data-scroll data-scroll-speed="3" class="h2-wrapper">
+
+
           <h2>Qui suis-je ?</h2>
+
+
+
         </div>
-        <p>
-         Je m'appelle Dylan, j'ai 24 ans et je vis sur Paris.
-         C'est avec passion que je me suis réorienté vers le développement web,
-         C'est après 6 mois de formation chez O'clock que je peux enfin battre des ailes.
-         J'aime l'innovation, ce qui me plais le plus dans ce métier c'est le fait que nous ne cessons jamais d'apprendre de nouvelles choses.
-         Ce côté ou il faut s'adapter aux diverses demandes avec réactivité me stimule beaucoup.
-         De nature très curieuse, je ne refuserai jamais un challenge intéressant ou encore de plonger mon nez dans de nouvelles technologies pour être plus utile.
-        </p>
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="horizontal"
+            >
+              Adepte de l'innovation,
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p
+              data-scroll
+              data-scroll-speed="-1"
+              data-scroll-direction="horizontal"
+            >
+              Une grande envie d'apprendre,
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p
+              data-scroll
+              data-scroll-speed="1"
+              data-scroll-direction="horizontal"
+            >
+              De la bonne humeur et de la motivation,
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p
+              data-scroll
+              data-scroll-speed="2"
+              data-scroll-direction="horizontal"
+            >
+             La discipline est mon maître mot,
+            </p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div data-scroll class="appear">
+            <p 
+              data-scroll
+              data-scroll-speed="0"
+              data-scroll-direction="horizontal"
+            >
+              Bienvenue dans mon monde.
+            </p>
+          </div>
+        </div>
+
+      
+
+        
       </section>
 
       <div data-scroll class="line-wrapper">
         <div class="line"></div>
       </div>
-
+      <div data-scroll data-scroll-repeat="true" class="wrapper" id="color">
       <section class="skills">
         <h2 class="title">
-          <span data-scroll data-scroll-speed="1">E</span>
-          <span data-scroll data-scroll-speed="0">x</span>
-          <span data-scroll data-scroll-speed="1">p</span>
-          <span data-scroll data-scroll-speed="2">e</span>
-          <span data-scroll data-scroll-speed="0">r</span>
+          <span data-scroll data-scroll-speed="1">C</span>
+          <span data-scroll data-scroll-speed="0">o</span>
+          <span data-scroll data-scroll-speed="1">m</span>
+          <span data-scroll data-scroll-speed="2">p</span>
+          <span data-scroll data-scroll-speed="0">é</span>
           <span data-scroll data-scroll-speed="1">t</span>
-          <span data-scroll data-scroll-speed="2">i</span>
-          <span data-scroll data-scroll-speed="1">s</span>
-          <span data-scroll data-scroll-speed="0">e</span>
+          <span data-scroll data-scroll-speed="2">e</span>
+          <span data-scroll data-scroll-speed="1">n</span>
+          <span data-scroll data-scroll-speed="0">c</span>
+          <span data-scroll data-scroll-speed="1">e</span>
+          <span data-scroll data-scroll-speed="2">s</span>
         </h2>
 
         <div class="wrapper">
           <div data-scroll class="appear">
             <p
               data-scroll
-              data-scroll-speed="-2"
+              data-scroll-speed="-5"
               data-scroll-direction="horizontal"
             >
               JavaScript
@@ -108,7 +170,7 @@
           <div data-scroll class="appear">
             <p
               data-scroll
-              data-scroll-speed="1"
+              data-scroll-speed="5"
               data-scroll-direction="horizontal"
             >
               React
@@ -141,7 +203,7 @@
           <div data-scroll class="appear">
             <p
               data-scroll
-              data-scroll-speed="3"
+              data-scroll-speed="8"
               data-scroll-direction="horizontal"
             >
               Node.js
@@ -152,13 +214,14 @@
           <div data-scroll class="appear">
             <p
               data-scroll
-              data-scroll-speed="3"
+              data-scroll-speed="-5"
               data-scroll-direction="horizontal"
             >
               Express.js
             </p>
           </div>
         </div>
+      </div>
       </section>
 
       <div data-scroll class="line-wrapper">
@@ -223,20 +286,28 @@
         <div class="wrapper">
           <div data-scroll class="appear" id="l3">
             <p>avec vous</p>
+
+            
           </div>
         </div>
-        <div
-          data-scroll
-          data-scroll-speed="7"
-          data-scroll-position="bottom"
-          class="img-wrapper"
-        >
+
+        
+    
           <div class="img img2"></div>
-        </div>
+
+
+       
         <br /><br /><br />
+
+<div class="bottom_links"> 
+        <a href=".links" data-scroll-to> retour en haut de page</a>
+      </div>
       </footer>
     </div>
 
+   
+    
+   
     <script src="./assets/lib/locomotive-scroll.min.js"></script>
     <script src="./assets/js/index.js"></script>
     <script src="https://kit.fontawesome.com/1cdbfb2da8.js" crossorigin="anonymous"></script>
