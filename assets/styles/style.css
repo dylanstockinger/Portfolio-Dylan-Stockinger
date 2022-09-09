@@ -289,10 +289,22 @@ footer p {
   color: #fffffb;
 }
 
-footer a {
+#idem{
+  font-size: 5rem;
+  color:#ffd415;
+
+}
+
+#idem2 {
+  font-size: 2rem;
+  color:#49bb9e;
+  
+}
+
+footer  {
   font-family: "font-bold", serif;
   color: #f5f101;
-  font-size: calc(1rem + 2vw);
+  
 }
 
 
