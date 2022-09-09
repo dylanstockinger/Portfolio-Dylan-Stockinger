@@ -290,13 +290,13 @@ footer p {
 }
 
 #idem{
-  font-size: 5rem;
+  font-size: calc(1rem + 1vw);
   color:#ffd415;
 
 }
 
 #idem2 {
-  font-size: 1.6rem;
+  font-size: calc(1rem + 0.5vw);
   color:#ffd415;
   
 }
