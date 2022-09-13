@@ -1,4 +1,6 @@
 /* Paramètres généraux  */
+
+
 @font-face {
   font-family: "font-reg";
   src: url(../fonts/PlayfairDisplay-Regular.ttf);
@@ -28,7 +30,7 @@ body {
   transition: 0.7s ease-in-out;
 }
 h1 {
-  font-size: calc(2rem + 8vw);
+  font-size: calc(1.3rem + 8vw);
   margin-top: 70px;
   font-family: "font-bold", serif;
   letter-spacing: 6px;
@@ -311,4 +313,10 @@ footer  {
 .img2 {
   
   background: url(../img/dylan2.jpeg) center/cover;
+}
+
+
+
+@media all and (max-width: 500px) {
+  
 }
