@@ -62,9 +62,10 @@ h1 {
 
 .title {
 
-  font-size: calc(0.5rem + 5vw);
+  font-size: calc(0.9rem + 5vw);
   letter-spacing: 0;
   color: #000000;
+  text-decoration: underline #53b2ff;
 }
 
 span {
