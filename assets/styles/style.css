@@ -1,10 +1,12 @@
 /* Paramètres généraux  */
 
 
+
 @font-face {
   font-family: "font-reg";
   src: url(../fonts/PlayfairDisplay-Regular.ttf);
 }
+
 @font-face {
   font-family: "font-bold";
   src: url(../fonts/PlayfairDisplay-ExtraBold.ttf);
@@ -13,79 +15,105 @@
 * {
   padding: 0;
   margin: 0;
-/* 
+  /* 
   color: #5a2424; */
 }
+
 *::selection {
-  background: #010100;
+  background: #fd876f;
   color: #fefeff;
 }
+
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
+
 body {
   font-family: "font-reg", serif;
-  background: #1e3347;
+  background: #fedd80;
   color: #fefeff;
   transition: 0.7s ease-in-out;
 }
+
 h1 {
   font-size: calc(1.3rem + 8vw);
   margin-top: 70px;
   font-family: "font-bold", serif;
   letter-spacing: 6px;
-  color: #ffe600;
+  color: #000000;
 }
-h2 {
+
+#h2-2 {
   font-size: calc(3rem + 5vw);
   text-align: center;
-  color: #fffffb;
+  color: #000000;
+  font-family: "font-bold", serif;
+  letter-spacing: 3px;
+  text-decoration: underline #fd876f;
+}
+
+#h2-1 {
+  font-size: calc(3rem + 5vw);
+  text-align: center;
+  color: #000000;
   font-family: "font-bold", serif;
   letter-spacing: 3px;
 
   /* color: #ffd900; */
 }
+
 .title {
-  font-size: calc(1.5rem + 5vw);
+
+  font-size: calc(1.6rem + 5vw);
   letter-spacing: 0;
+  color: #000000;
 }
+
 span {
   display: inline-block;
 }
+
 a,
 a:visited {
   cursor: pointer;
   position: relative;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   transition: 0.1s linear;
   font-size: calc(0.8rem + 0.8vw);
 }
+
 a::after {
   content: "";
   position: absolute;
   width: 100%;
-  height: 1px;
-  background: #000000;
+  height: 2px;
+  background: #fd876f;
   bottom: -4px;
   left: 0;
   transform-origin: left;
 }
+
 a:hover {
   transform: scale(1.04);
-  color: #ffe600;;
+  color: #000000;
+  ;
 }
+
 a:hover::after {
   animation: animLink 1.4s infinite ease-in-out;
 }
+
 @keyframes animLink {
   50% {
     transform: scaleX(0.2);
   }
+
   100% {
     transform: scaleX(1);
   }
 }
+
 .img {
   height: 395px;
   width: 100vw;
@@ -94,31 +122,36 @@ a:hover::after {
   filter: grayscale(100%);
   transition: 1.6s;
 }
+
 .img:hover {
   filter: grayscale(10%);
 }
 
 .line {
-  height: 2px;
+  height: 4px;
   width: 70%;
   margin: 0 auto;
-  background: #fdffff;
+  background: #fd876f;
   transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
   transform-origin: left;
   transition-delay: 0.65s;
- 
+
 }
+
 .wrapper {
   perspective: 250px;
 }
-.appear{
-  opacity:0;
-  transform:translateY(100%) rotateX(-80deg);
+
+.appear {
+  opacity: 0;
+  transform: translateY(100%) rotateX(-80deg);
   transform-origin: top center;
   transform-style: preserve-3d;
-  transition: 0.8s cubic-bezier(0.215,0.61,0.355,1);
+  transition: 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
 
-} .appear.is-inview {
+}
+
+.appear.is-inview {
   transition-delay: 0.2s;
   opacity: 1;
   transform: none;
@@ -132,6 +165,7 @@ header {
   position: relative;
   margin: 2vw 2vw 0;
 }
+
 .links {
   display: flex;
   justify-content: space-between;
@@ -139,7 +173,7 @@ header {
 
 .bottom_links {
   text-align: center;
-  
+
 }
 
 header h2 {
@@ -149,13 +183,14 @@ header h2 {
 }
 
 
-.fa-linkedin:hover{
+.fa-linkedin:hover {
   transform: scale(1.04);
   color: #0a66c2;
 
 }
-.fa-linkedin{
-  color:rgb(255, 250, 250);
+
+.fa-linkedin {
+  color: rgb(0, 0, 0);
   font-size: 2.3rem;
 }
 
@@ -164,32 +199,38 @@ header h2 {
   left: 50%;
   bottom: 3.5vw;
   transform: translateX(-50%);
-  color: rgb(217, 217, 217);
-  font-size: calc(0.8rem + 0.5vw);
+  color: rgb(0, 0, 0);
+  font-size: calc(1.4rem + 0.5vw);
 }
+
 .about {
   margin: 400px 0 250px;
 }
+
 .img1-wrapper {
   z-index: 2;
   position: relative;
 }
+
 .img1 {
   background: url(../img/dylan.jpeg) top/cover;
 }
+
 .h2-wrapper {
   mix-blend-mode: exclusion;
   margin: -220px 0 200px;
   text-align: center;
   z-index: 10;
   position: relative;
+  font-size: 3rem;
 }
+
 .h2-wrapper h2 {
-  color: rgb(196, 196, 196);
+  color: rgb(255, 255, 255);
 }
 
 
-.about  p{
+.about p {
   width: 70%;
   min-width: 280px;
   text-align: center;
@@ -197,10 +238,10 @@ header h2 {
   /* line-height: calc(7px + 4.5vw); */
   font-size: calc(1rem + 6vw);
   letter-spacing: 1px;
-  
+
   margin: 200px auto 0;
-  color: #fffefb;
-  
+  color: #000000;
+
   text-align: center;
   padding: 60px;
 
@@ -211,32 +252,39 @@ header h2 {
 .skills {
   margin: 200px 0 250px;
 }
+
 .skills h2 {
   margin-bottom: 150px;
 }
+
 .skills .wrapper {
   margin: 30px 0;
 }
+
 .skills .appear {
   text-align: center;
   /* transition-delay: 0.6s; */
 }
+
 .skills p {
   font-size: calc(1rem + 6vw);
   font-family: "font-bold", serif;
   letter-spacing: 4px;
-  background: #c2b32b;
+  background: #fd876f;
   color: #000000;
   display: inline-block;
   padding: 0 12px 12px 12px;
-  
+
 }
+
 .portfolio {
   margin: 200px 0;
 }
+
 .projects-container {
   margin-top: 100px;
 }
+
 .project {
   position: relative;
   width: 60vw;
@@ -247,20 +295,25 @@ header h2 {
 #p2 {
   margin: 0 6vw 0 auto;
 }
+
 #p3 {
   margin-left: 8vw;
 }
+
 .project img {
   transition: 0.4s ease-out;
   width: 100%;
 }
+
 .project:hover img {
   filter: brightness(20%);
 }
+
 .project:hover .project-infos {
   opacity: 1;
   transform: translateY(-50%);
 }
+
 .project-infos {
   position: absolute;
   top: 50%;
@@ -269,54 +322,56 @@ header h2 {
   opacity: 0;
   transition: 0.4s ease-out;
 }
+
 .project-infos a {
   font-size: calc(1rem + 3vw);
 }
+
 .project-infos p {
   font-size: 2rem;
   margin-top: 1.5vw;
   color: #fefeff;
 
 }
+
 footer {
   height: 100vh;
   width: 100%;
   margin: 150px 0 120px;
- 
+
 }
+
 footer p {
   font-size: calc(1rem + 2vw);
   text-align: center;
   margin: 25px 0;
-  color: #fffffb;
+  color: #000000;
 }
 
-#idem{
+#idem {
   font-size: calc(1rem + 1vw);
-  color:#ffd415;
+  color: #000000;
 
 }
 
 #idem2 {
   font-size: calc(1rem + 0.5vw);
-  color:#ffd415;
-  
+  color: #070706;
+
 }
 
-footer  {
+footer {
   font-family: "font-bold", serif;
   color: #f5f101;
-  
+
 }
 
 
 .img2 {
-  
+
   background: url(../img/dylan2.jpeg) center/cover;
 }
 
 
 
-@media all and (max-width: 500px) {
-  
-}
+@media all and (max-width: 500px) {}
