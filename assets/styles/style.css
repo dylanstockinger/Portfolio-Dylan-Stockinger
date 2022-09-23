@@ -58,13 +58,11 @@ h1 {
   color: #000000;
   font-family: "font-bold", serif;
   letter-spacing: 3px;
-
-  /* color: #ffd900; */
 }
 
 .title {
 
-  font-size: calc(1.6rem + 5vw);
+  font-size: calc(0.5rem + 5vw);
   letter-spacing: 0;
   color: #000000;
 }
