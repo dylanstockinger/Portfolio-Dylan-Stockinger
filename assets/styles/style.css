@@ -65,7 +65,6 @@ h1 {
   font-size: calc(0.9rem + 5vw);
   letter-spacing: 0;
   color: #000000;
-  text-decoration: underline #53b2ff;
 }
 
 span {
@@ -130,7 +129,6 @@ a:hover::after {
   height: 4px;
   width: 70%;
   margin: 0 auto;
-  background: #fd876f;
   transition: 1s cubic-bezier(0.77, 0, 0.18, 1);
   transform-origin: left;
   transition-delay: 0.65s;
@@ -269,7 +267,6 @@ header h2 {
   font-size: calc(1rem + 6vw);
   font-family: "font-bold", serif;
   letter-spacing: 4px;
-  background: #fd876f;
   color: #000000;
   display: inline-block;
   padding: 0 12px 12px 12px;
